@@ -1,18 +1,33 @@
-name: Code quality
+name: Code Quality
 
 on:
   push:
+    branches: [main, master, develop, "feature/**", "release/**", "hotfix/**"]
   pull_request:
+    branches: [main, master, develop]
 
 jobs:
-  quality:
+  biome-check:
+    name: Biome Code Quality
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
-        with:
-          version: latest
-      - name: Run Biome
+        # The action will automatically detect the version from your package.json
+
+      - name: Run Biome CI Check
         run: biome ci .
+        # The 'ci' command combines linting, formatting checks in one command
