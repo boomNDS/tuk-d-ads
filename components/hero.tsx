@@ -17,6 +17,7 @@ const Hero = () => {
 					</p>
 					<div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
 						<Button
+							variant="ghost"
 							size="lg"
 							className="w-full sm:w-auto rounded-full text-base"
 						>
