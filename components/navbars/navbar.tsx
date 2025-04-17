@@ -1,9 +1,9 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
-import { NavMenu } from "./nav-menu";
-import { NavigationSheet } from "./navigation-sheet";
 import LineButton from "@/components/line-button";
 import Logo from "@/components/logo";
+import { useEffect, useRef, useState } from "react";
+import { NavMenu } from "./nav-menu";
+import { NavigationSheet } from "./navigation-sheet";
 
 const Navbar = () => {
 	const [visible, setVisible] = useState(true);
@@ -44,14 +44,14 @@ const Navbar = () => {
        `}
 		>
 			<div className="h-full flex items-center justify-between px-4">
-				<Logo />
-
+				<div className="flex items-center gap-3">
+					<Logo />
+					<p className="hidden md:block">บริการติดป้ายโฆษณารถตุ๊ก ๆ</p>
+				</div>
 				{/* Desktop Menu */}
 				{/* <NavMenu className="hidden md:block" /> */}
-
 				<div className="flex items-center gap-3">
 					<LineButton />
-
 					{/* Mobile Menu */}
 					{/* <div className="md:hidden">
             <NavigationSheet />

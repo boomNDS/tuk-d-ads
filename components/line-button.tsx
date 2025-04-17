@@ -1,5 +1,5 @@
-import { FaLine } from "react-icons/fa";
 import Link from "next/link";
+import { FaLine } from "react-icons/fa";
 
 export default function LineButton() {
 	return (
@@ -9,8 +9,8 @@ export default function LineButton() {
 			rel="noopener noreferrer"
 			className="inline-flex items-center rounded-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 text-sm font-medium"
 		>
-			<FaLine className="mr-2 text-lg" />
-			เพิ่มเพื่อน
+			<FaLine className="text-lg" />
+			<span className="hidden md:inline ml-2">เพิ่มเพื่อน</span>
 		</Link>
 	);
 }

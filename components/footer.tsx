@@ -1,9 +1,9 @@
-import { Separator } from "@/components/ui/separator";
-// import { FacebookIcon, InstagramIcon } from "lucide-react";
-import { SiTiktok, SiFacebook, SiInstagram } from "react-icons/si";
-import Link from "next/link";
-import { SOCIAL_LINKS } from "@/lib/constants";
 import Logo from "@/components/logo";
+import { Separator } from "@/components/ui/separator";
+import { SOCIAL_LINKS } from "@/lib/constants";
+import Link from "next/link";
+// import { FacebookIcon, InstagramIcon } from "lucide-react";
+import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
 
 // TODO: add Privacy Policy Terms of Service Cookie Policy
 const footerSections = [

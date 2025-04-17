@@ -1,8 +1,8 @@
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import Link from "next/link";
 // components/Logo.tsx
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 export type LogoProps = {
 	orientation?: "horizontal" | "vertical";
