@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
+import { ArrowUpRight, FileQuestion } from "lucide-react";
 import Image from "next/image";
 
 const Hero = () => {
 	return (
-		<div className="min-h-[calc(100vh-4rem)] w-full flex items-center justify-center overflow-hidden border-b border-accent">
+		<div className="min-h-[calc(100vh-4rem)] bg-muted w-full flex items-center justify-center overflow-hidden border-b border-accent">
 			<div className="max-w-screen-xl w-full flex flex-col lg:flex-row mx-auto items-center justify-between gap-y-14 gap-x-10 px-6 py-12 lg:py-0">
 				<div className="max-w-xl">
 					<h1 className="mt-6 hero-title">
@@ -20,14 +20,15 @@ const Hero = () => {
 							size="lg"
 							className="w-full sm:w-auto rounded-full text-base"
 						>
-							Get Started <ArrowUpRight className="!h-5 !w-5" />
+							เข้าถึงลูกค้าให้มากขึ้นทันที!
+							<ArrowUpRight className="!h-5 !w-5" />
 						</Button>
 						<Button
 							variant="outline"
 							size="lg"
 							className="w-full sm:w-auto rounded-full text-base shadow-none"
 						>
-							<CirclePlay className="!h-5 !w-5" /> Watch Demo
+							<FileQuestion className="!h-5 !w-5" /> ทำงานอย่างไร ?
 						</Button>
 					</div>
 				</div>
