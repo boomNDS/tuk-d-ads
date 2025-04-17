@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
 	return (
-		<div className="container max-w-4xl mx-auto py-12 px-4 md:px-6 animate-fade-in">
+		<div className="container max-w-4xl mx-auto py-12 px-4 md:px-6 animate-fade-in mt-[80px]">
 			<div className="space-y-6">
 				<div className="space-y-2 text-center animate-fade-down animate-once">
 					<h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
