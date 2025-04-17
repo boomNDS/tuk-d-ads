@@ -6,9 +6,16 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"format": "npx @biomejs/biome format --write",
-		"lint": "npx @biomejs/biome lint --write",
-		"check": "npx @biomejs/biome check --write"
+		"format": "npx @biomejs/biome format --write .",
+		"lint": "npx @biomejs/biome lint --write .",
+		"check": "npx @biomejs/biome check --write .",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json,css,md}": [
+			"npx @biomejs/biome format --write",
+			"npx @biomejs/biome lint --write"
+		]
 	},
 	"dependencies": {
 		"@radix-ui/react-dropdown-menu": "^2.1.6",
@@ -29,6 +36,8 @@
 		"@types/node": "^22",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
+		"husky": "^9.1.7",
+		"lint-staged": "^15.5.1",
 		"tailwindcss": "^4",
 		"typescript": "^5"
 	}
