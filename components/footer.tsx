@@ -86,7 +86,6 @@ const Footer = () => {
 			<div className="max-w-screen-xl mx-auto py-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-x-8 gap-y-10 px-6">
 				<div className="col-span-full xl:col-span-2">
 					{/* Logo */}
-					{/* biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
 					<Logo src="/logo-white.png" />
 
 					<p className="mt-4 text-muted-foreground">
