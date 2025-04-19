@@ -68,13 +68,13 @@ export default function TermsPage() {
 						</p>
 					</section>
 
-					<section className="space-y-3 animate-fade-up animate-delay-800 animate-once">
+					{/* <section className="space-y-3 animate-fade-up animate-delay-800 animate-once">
 						<h2 className="text-2xl font-bold">ติดต่อเรา</h2>
 						<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
 							หากมีคำถามเกี่ยวกับข้อกำหนดการใช้บริการ กรุณาติดต่อ contact@tukdads.com
 							หรือผ่านแบบฟอร์มติดต่อบนเว็บไซต์ของเรา
 						</p>
-					</section>
+					</section> */}
 				</div>
 
 				<div className="flex justify-center pt-8 animate-jump-in animate-delay-900 animate-once">

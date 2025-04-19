@@ -23,6 +23,10 @@ export const metadata: Metadata = {
 	title: "Tuk D Ads | ร้านรับติดป้ายโฆษณาหลังรถตุ๊กๆ",
 	description:
 		"สร้างความประทับใจด้วยการติดป้ายรถตุ๊ก ๆ อวยพรศิลปินหรือโปรโมทสินค้าและบริการในวันเกิดของคุณ เปลี่ยนทุกการเดินทางให้เป็นโอกาสพิเศษ!",
+	metadataBase: new URL("https://tukdads.com"),
+	alternates: {
+		canonical: "/",
+	},
 	keywords: [
 		"ติดป้ายรถตุ๊ก",
 		"อวยพรศิลปิน",
