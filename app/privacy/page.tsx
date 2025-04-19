@@ -91,7 +91,7 @@ export default function PrivacyPage() {
 						</ul>
 					</section>
 
-					<section className="space-y-3 animate-fade-up animate-delay-800 animate-once">
+					{/* <section className="space-y-3 animate-fade-up animate-delay-800 animate-once">
 						<h2 className="text-2xl font-bold">ติดต่อเรา</h2>
 						<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
 							หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้หรือต้องการใช้สิทธิตาม PDPA
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
 							ที่อยู่: Tuk D Ads, xxx อาคาร xxx ชั้น x ถนนxxx แขวงxxx เขตxxx กรุงเทพฯ
 							xxxxx
 						</p>
-					</section>
+					</section> */}
 				</div>
 
 				<div className="flex justify-center pt-8 animate-jump-in animate-delay-900 animate-once">

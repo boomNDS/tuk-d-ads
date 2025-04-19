@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, FileQuestion } from "lucide-react";
 import Image from "next/image";
+import OurClientSection from "@/components/sections/our-clients";
 
 const Hero = () => {
 	return (
-		<div className="min-h-[calc(100vh-4rem)] bg-muted w-full flex items-center justify-center overflow-hidden border-b border-accent">
+		<div className="min-h-[calc(100vh-4rem)] bg-muted w-full flex flex-col items-center justify-center overflow-hidden border-b border-accent">
 			<div className="max-w-screen-xl w-full flex flex-col lg:flex-row mx-auto items-center justify-between gap-y-14 gap-x-10 px-6 py-12 lg:py-0">
 				<div className="max-w-xl">
 					<h1 className="mt-6 hero-title">
@@ -43,6 +44,7 @@ const Hero = () => {
 					{/* <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-t from-transparent to-white" /> */}
 				</div>
 			</div>
+			<OurClientSection />
 		</div>
 	);
 };

@@ -13,5 +13,6 @@ export default function robots(): MetadataRoute.Robots {
 				disallow: ["/"],
 			},
 		],
+		sitemap: "https://tukdads.com/sitemap.xml",
 	};
 }
