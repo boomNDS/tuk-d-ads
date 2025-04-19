@@ -27,6 +27,8 @@ jobs:
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
         # The action will automatically detect the version from your package.json
+      - name: Run Biome with auto‑fix
+        run: npx biome check --apply .
 
       - name: Run Biome CI Check
         run: biome ci .
