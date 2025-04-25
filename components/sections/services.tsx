@@ -1,4 +1,5 @@
 import { PenTool, Printer, Package } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const features = [
 	{
@@ -22,14 +23,24 @@ const Services = () => {
 	return (
 		<div className="min-h-[350px] flex items-center justify-center py-10">
 			<div>
-				<h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
+				<h2
+					className={cn(
+						"text-4xl sm:text-5xl font-bold tracking-tight text-center",
+						"motion-safe:animate-in motion-safe:fade-in duration-700",
+					)}
+				>
 					บริการของเรา
 				</h2>
 				<div className="mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-screen-lg mx-auto px-6">
 					{features.map((feature) => (
 						<div
 							key={feature.title}
-							className="flex flex-col items-center text-center border rounded-xl py-8 px-6"
+							className={cn(
+								"flex flex-col items-center text-center border rounded-xl",
+								"py-8 px-6",
+								"shadow-sm hover:shadow-lg duration-200 ease-in-out hover:scale-105",
+								"motion-safe:animate-in motion-safe:fade-in duration-700",
+							)}
 						>
 							<div className="mb-4 flex items-center justify-center bg-muted rounded-full h-20 w-20">
 								<feature.icon className="h-12 w-12" />
