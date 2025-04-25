@@ -15,7 +15,7 @@ export default function Home() {
 			<ServicesSection />
 			<Workflows />
 			<SupportedAds />
-			{/* <Testimonial /> */}
+			<Testimonial />
 		</div>
 	);
 }

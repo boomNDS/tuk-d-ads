@@ -3,58 +3,44 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 const testimonials = [
 	{
 		id: 1,
-		name: "John Doe",
-		designation: "Software Engineer",
-		company: "TechCorp",
-		testimonial:
-			"This product has completely transformed the way we work. The efficiency and ease of use are unmatched!",
+		name: "Patung Supayoon",
+		designation: "นักวิชาการคอมพิวเตอร์",
+		company: "โรงพยาบาลสบเมย",
+		testimonial: "ราคาย่อมเยา คุ้มค่ากับราคาที่จ่าย เจ้าของใจดี ออกแบบสวย ติดตั้งไว",
 		avatar: "https://randomuser.me/api/portraits/men/1.jpg",
 	},
 	{
 		id: 2,
-		name: "Sophia Lee",
-		designation: "Data Analyst",
-		company: "InsightTech",
-		testimonial:
-			"This tool has saved me hours of work! The analytics and reporting features are incredibly powerful.",
+		name: "Anankasun Amonluk",
+		designation: "Service Engineer",
+		company: "Yip In Tsoi",
+		testimonial: "ราคาไม่แพง ได้ป้ายตามที่สั่ง ร้านให้คำแนะนำและบริการที่ดีมากครับ",
 		avatar: "https://randomuser.me/api/portraits/women/6.jpg",
 	},
 	{
 		id: 3,
-		name: "Michael Johnson",
-		designation: "UX Designer",
-		company: "DesignPro",
-		testimonial:
-			"An amazing tool that simplifies complex tasks. Highly recommended for professionals in the industry. " +
-			"The intuitive interface makes it easy to onboard new team members, and the automation features save us countless hours every week. ",
+		name: "Pharanya S. Möök",
+		designation: undefined,
+		company: undefined,
+		testimonial: "บริการดี ดูแลดีมาก แอดมินน่ารัก คุยง่าย ได้ป้ายตามสั่งเลย 👍",
 		avatar: "https://randomuser.me/api/portraits/men/3.jpg",
 	},
 	{
 		id: 4,
-		name: "Emily Davis",
-		designation: "Marketing Specialist",
-		company: "BrandBoost",
-		testimonial:
-			"I've seen a significant improvement in our team's productivity since we started using this service.",
+		name: "Phunnita Intarapimai ",
+		designation: "Digital creator",
+		company: undefined,
+		testimonial: "ป้ายสวยติดให้จริงเจ้าของน่ารักค่ะ",
 		avatar: "https://randomuser.me/api/portraits/women/4.jpg",
 	},
 	{
 		id: 5,
-		name: "Daniel Martinez",
-		designation: "Full-Stack Developer",
-		company: "CodeCrafters",
+		name: "Stamppong",
+		designation: undefined,
+		company: undefined,
 		testimonial:
-			"The best investment we've made! The support team is also super responsive and helpful.",
+			"ทำงานรวดเร็ว ราคาเป็นกันเอง แก้ไขขงานรวดเร็ว ได้งานตามที่ต้องการ มีคุณภาพมากคะ กลับมาจ้างใหม่แน่นอนคะ ",
 		avatar: "https://randomuser.me/api/portraits/men/5.jpg",
-	},
-	{
-		id: 6,
-		name: "Jane Smith",
-		designation: "Product Manager",
-		company: "InnovateX",
-		testimonial:
-			"The user experience is top-notch! The interface is clean, intuitive, and easy to navigate.",
-		avatar: "https://randomuser.me/api/portraits/women/2.jpg",
 	},
 ];
 
