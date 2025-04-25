@@ -7,31 +7,41 @@ import { cn } from "@/lib/utils";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { PlusIcon } from "lucide-react";
 
-const faq = [
+const faqItems = [
 	{
-		question: "What is your return policy?",
+		question: "ลูกค้าจะจองมากกว่า 50 คันได้อย่างไร?",
 		answer:
-			"You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+			"สำหรับลูกค้าที่ต้องการติดโฆษณามากกว่า 50 คัน กรุณาคลิก “Contact for Enterprise” หรือติดต่อเราผ่านแบบฟอร์มเพื่อขอใบเสนอราคาเฉพาะและส่วนลดพิเศษ.",
 	},
 	{
-		question: "How do I track my order?",
+		question: "ฉันสามารถเปลี่ยนแปลงแคมเปญกลางเดือนได้หรือไม่?",
 		answer:
-			"Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+			"ได้ คุณสามารถปรับจำนวนรถตุ๊ก-ตุ๊กหรือโซนได้โดยแจ้งล่วงหน้า 7 วัน ราคาจะถูกปรับคำนวณตามสัดส่วนวันที่เหลือ.",
 	},
 	{
-		question: "Do you ship internationally?",
+		question: "โซนไหนให้การเข้าถึงสูงสุด?",
 		answer:
-			"Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+			"โซน A (กลางกรุงเทพฯ) ให้การมองเห็นสูงสุด รองลงมาคือโซน B (ชานเมือง) ดูแผนที่โซนสำหรับรายละเอียดเพิ่มเติม.",
 	},
 	{
-		question: "What payment methods do you accept?",
+		question: "บริการรวมอะไรบ้าง?",
 		answer:
-			"We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+			"ในแต่ละแพลนรวมการออกแบบ ปริ้นท์ ติดตั้ง รายงานผลการติดตั้งรายสัปดาห์ (ภาพถ่าย & คลิป) และการโปรโมทบน Facebook & TikTok.",
 	},
 	{
-		question: "What if I receive a damaged item?",
+		question: "ฉันจะส่ง Artwork อย่างไร?",
 		answer:
-			"Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+			"คุณสามารถอัปโหลด Artwork ของคุณในขั้นตอนชำระเงิน หากต้องการความช่วยเหลือด้านการออกแบบ ทีมงานของเราจะสร้างตัวอย่างและส่งให้ภายใน 2 วันทำการ.",
+	},
+	{
+		question: "พื้นที่ที่ต้องการติดตั้งคิดอย่างไร?",
+		answer:
+			"พื้นที่ติดตั้งพื้นที่เดียวฟรี กรณีติดตั้งมากกว่า 1 พื้นที่ จะมีค่าบริการเดินทางเพิ่มเติม กรุณาติดต่อเพื่อประเมินค่าบริการตามระยะทาง.",
+	},
+	{
+		question: "ขนาดป้ายและไฟล์ออกแบบต้องเป็นแบบใด?",
+		answer:
+			"ป้ายมีขนาดมาตรฐาน 80×40 ซม. สำหรับรถตุ๊กตุ๊ก ไฟล์ออกแบบควรกำหนดโหมดสีเป็น CMYK เพื่อความแม่นยำในการพิมพ์ รองรับไฟล์ .jpeg, .png, .ai, .psd, .pdf.",
 	},
 ];
 
@@ -40,10 +50,10 @@ const FAQSection = () => {
 		<div className="min-h-screen flex items-center justify-center px-6 py-12">
 			<div className="w-full max-w-2xl">
 				<h2 className="text-4xl md:text-5xl !leading-[1.15] font-bold tracking-tight">
-					Frequently Asked Questions
+					คำถามที่พบบ่อย
 				</h2>
 				<p className="mt-1.5 text-lg text-muted-foreground">
-					Quick answers to common questions about our products and services.
+					คำตอบอย่างรวดเร็วสำหรับคำถามทั่วไปเกี่ยวกับผลิตภัณฑ์และบริการของเรา
 				</p>
 
 				<Accordion
@@ -52,7 +62,7 @@ const FAQSection = () => {
 					className="mt-8 space-y-4"
 					defaultValue="question-0"
 				>
-					{faq.map(({ question, answer }, index) => (
+					{faqItems.map(({ question, answer }, index) => (
 						<AccordionItem
 							key={question}
 							value={`question-${index}`}
