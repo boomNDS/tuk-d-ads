@@ -4,6 +4,7 @@ import ServicesSection from "@/components/sections/services";
 import Workflows from "@/components/sections/workflows";
 import SupportedAds from "@/components/sections/supported-ads";
 import OurClientsSection from "@/components/sections/our-clients";
+import Testimonial from "@/components/sections/testimonial";
 
 export default function Home() {
 	return (
@@ -14,6 +15,7 @@ export default function Home() {
 			<ServicesSection />
 			<Workflows />
 			<SupportedAds />
+			{/* <Testimonial /> */}
 		</div>
 	);
 }
