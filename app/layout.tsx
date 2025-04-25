@@ -20,9 +20,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Tuk D Ads | ร้านรับติดป้ายโฆษณาหลังรถตุ๊กๆ",
+	title: "ติดป้ายรถตุ๊กๆ โปรโมทสินค้าได้ทุกที่ | Tuk D Ads", // 49 chars
 	description:
-		"สร้างความประทับใจด้วยการติดป้ายรถตุ๊ก ๆ อวยพรศิลปินหรือโปรโมทสินค้าและบริการในวันเกิดของคุณ เปลี่ยนทุกการเดินทางให้เป็นโอกาสพิเศษ!",
+		"ติดป้ายรถตุ๊กๆ อวยพรศิลปินและโปรโมทสินค้าของคุณได้ทุกที่ทั่วกรุงเทพฯ จองบริการวันนี้ เพื่อเข้าถึงกลุ่มลูกค้าใหม่อย่างมีประสิทธิภาพ", // 158 chars
 	metadataBase: new URL("https://tukdads.com"),
 	alternates: {
 		canonical: "/",
@@ -123,7 +123,7 @@ export default function RootLayout({
 	return (
 		<html lang="th" suppressHydrationWarning>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`} /* hide horizontal overflow */
 			>
 				<ThemeProvider
 					attribute="class"

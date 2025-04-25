@@ -7,7 +7,7 @@ export default function LineButton() {
 			href="https://lin.ee/75FQXCM"
 			target="_blank"
 			rel="noopener noreferrer"
-			className="inline-flex items-center rounded-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 text-sm font-medium"
+			className="w-full sm:w-auto inline-flex items-center rounded-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 text-sm font-medium"
 		>
 			<FaLine className="text-lg" />
 			<span className="hidden md:inline ml-2">เพิ่มเพื่อน</span>

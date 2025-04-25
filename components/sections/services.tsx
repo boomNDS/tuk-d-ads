@@ -20,7 +20,7 @@ const features = [
 
 const Services = () => {
 	return (
-		<div className="min-h-screen flex items-center justify-center py-12">
+		<div className="min-h-[350px] flex items-center justify-center py-10">
 			<div>
 				<h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-center">
 					บริการของเรา
