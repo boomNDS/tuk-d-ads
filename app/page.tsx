@@ -5,6 +5,7 @@ import Workflows from "@/components/sections/workflows";
 import SupportedAds from "@/components/sections/supported-ads";
 import OurClientsSection from "@/components/sections/our-clients";
 import Testimonial from "@/components/sections/testimonial";
+import FAQSection from "@/components/sections/faq";
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 			<Workflows />
 			<SupportedAds />
 			<Testimonial />
+			<FAQSection />
 		</div>
 	);
 }
