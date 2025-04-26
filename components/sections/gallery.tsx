@@ -1,19 +1,33 @@
 "use client";
 
 import { GalleryImage } from "@/components/commons/gallery-image";
-import { useMemo } from "react";
-import * as React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { cn } from "@/lib/utils";
 
-// Define image item shape
 interface ImageItem {
 	src: string;
 	priority: number;
 	alt: string;
 }
 
+function weightedShuffle<T extends { priority: number }>(items: T[]): T[] {
+	const arr = [...items];
+	const out: T[] = [];
+	while (arr.length) {
+		const total = arr.reduce((sum, x) => sum + x.priority, 0);
+		let r = Math.random() * total;
+		for (let i = 0; i < arr.length; i++) {
+			r -= arr[i].priority;
+			if (r <= 0) {
+				out.push(arr.splice(i, 1)[0]);
+				break;
+			}
+		}
+	}
+	return out;
+}
+
 const GallerySection = () => {
-	// 10 items per slide: 5 columns x 2 rows
 	const perSlide = 10;
 
 	const imagesData: ImageItem[] = useMemo(
@@ -94,28 +108,12 @@ const GallerySection = () => {
 		[],
 	);
 
-	const shuffled = useMemo(() => {
-		const arr = [...imagesData];
-		const out: ImageItem[] = [];
-		while (arr.length) {
-			const total = arr.reduce((sum, i) => sum + i.priority, 0);
-			let r = Math.random() * total;
-			const idx = arr.findIndex((i) => {
-				r -= i.priority;
-				return r <= 0;
-			});
-			out.push(arr.splice(idx, 1)[0]);
-		}
-		return out;
-	}, [imagesData]);
+	const [displayed, setDisplayed] = useState(imagesData.slice(0, perSlide));
 
-	const slides = useMemo(
-		() =>
-			Array.from({ length: Math.ceil(shuffled.length / perSlide) }, (_, i) =>
-				shuffled.slice(i * perSlide, i * perSlide + perSlide),
-			),
-		[shuffled],
-	);
+	useEffect(() => {
+		const shuffled = weightedShuffle(imagesData);
+		setDisplayed(shuffled.slice(0, perSlide));
+	}, [imagesData]);
 
 	return (
 		<section className="w-full px-4 py-12">
@@ -135,9 +133,9 @@ const GallerySection = () => {
             alt={imagesData[0].alt || "Placeholder"}
           />
         ))} */}
-				{slides[0].map((slide, idx) => (
+				{displayed.map((slide) => (
 					<GalleryImage
-						key={idx}
+						key={`image-idx-${slide.src}`}
 						src={slide.src || "/placeholder.svg"}
 						alt={slide.alt || "Placeholder"}
 					/>
