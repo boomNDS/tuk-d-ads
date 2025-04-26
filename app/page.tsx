@@ -7,6 +7,7 @@ import OurClientsSection from "@/components/sections/our-clients";
 import Testimonial from "@/components/sections/testimonial";
 import FAQSection from "@/components/sections/faq";
 import Pricing from "@/components/sections/pricing";
+import GallerySection from "@/components/sections/gallery";
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 			<Testimonial />
 			<Pricing />
 			<FAQSection />
+			<GallerySection />
 		</div>
 	);
 }

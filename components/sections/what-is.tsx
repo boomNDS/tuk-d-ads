@@ -27,7 +27,7 @@ export default function WhatIsSection() {
 						"motion-safe:animate-in motion-safe:slide-in-from-right duration-700",
 					)}
 				>
-					<h1 className="font-bold mt-6">
+					<h1 className="font-bold mt-6 leading-[5rem]">
 						<span className="gradient-text pr-2">โปรโมทแบรนด์คุณ</span>
 						กับรถตุ๊กตุ๊ก
 					</h1>
