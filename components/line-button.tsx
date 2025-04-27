@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaLine } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
 export default function LineButton() {
 	return (
