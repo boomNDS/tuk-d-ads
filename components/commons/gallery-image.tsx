@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/dialog";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 interface GalleryImageProps {
 	src: string;
@@ -34,7 +35,14 @@ export const GalleryImage = React.memo(function GalleryImage({
 	const [loaded, setLoaded] = useState(false);
 	const [open, setOpen] = useState(false);
 
-	const onOpen = useCallback(() => setOpen(true), []);
+	const onOpen = useCallback(() => {
+		setOpen(true);
+		sendGTMEvent({
+			event: "view_image",
+			button_id: "view_image",
+			button_text: "view image",
+		});
+	}, []);
 	const onClose = useCallback(() => setOpen(false), []);
 
 	return (

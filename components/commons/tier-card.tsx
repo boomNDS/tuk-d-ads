@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { CircleCheck } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { FaLine } from "react-icons/fa";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 interface Props {
 	title: string;
@@ -72,7 +73,14 @@ export default function TierCard({
 				<Button
 					variant="success"
 					className="mt-3 w-full"
-					onClick={() => window.open("https://lin.ee/75FQXCM", "_blank")}
+					onClick={(title) => {
+						window.open("https://lin.ee/75FQXCM", "_blank");
+						sendGTMEvent({
+							event: "button_click",
+							button_id: `line-btn-${title}`,
+							button_text: "Add Friend",
+						});
+					}}
 				>
 					<FaLine className="text-lg" />
 					ติดต่อผ่าน LINE

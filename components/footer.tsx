@@ -2,6 +2,8 @@ import Logo from "@/components/logo";
 import { Separator } from "@/components/ui/separator";
 import { SOCIAL_LINKS } from "@/lib/constants";
 import Link from "next/link";
+import { sendGTMEvent } from "@next/third-parties/google";
+
 // import { FacebookIcon, InstagramIcon } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok } from "react-icons/si";
 
@@ -118,7 +120,7 @@ const Footer = () => {
 				{/* Copyright */}
 				<span className="text-muted-foreground text-center xs:text-start">
 					&copy; {new Date().getFullYear()}{" "}
-					<Link href="https://shadcnui-blocks.com" target="_blank">
+					<Link href="https://www.tukdads.com/" target="_blank">
 						TUK D ADS
 					</Link>
 					. All rights reserved.
@@ -128,6 +130,13 @@ const Footer = () => {
 					<Link
 						href={SOCIAL_LINKS.facebook}
 						target="_blank"
+						onClick={() => {
+							sendGTMEvent({
+								event: "open_facebook",
+								button_id: "open_facebook",
+								button_text: "open facebook",
+							});
+						}}
 						className="transition-all duration-300 hover:text-white cursor-pointer transform hover:scale-110"
 					>
 						<SiFacebook className="h-5 w-5" />
@@ -135,6 +144,13 @@ const Footer = () => {
 					<Link
 						href={SOCIAL_LINKS.instagram}
 						target="_blank"
+						onClick={() => {
+							sendGTMEvent({
+								event: "open_instagram",
+								button_id: "open_instagram",
+								button_text: "open instagram",
+							});
+						}}
 						className="transition-all duration-300 hover:text-white cursor-pointer transform hover:scale-110"
 					>
 						<SiInstagram className="h-5 w-5" />
@@ -142,6 +158,13 @@ const Footer = () => {
 					<Link
 						href={SOCIAL_LINKS.tiktok}
 						target="_blank"
+						onClick={() => {
+							sendGTMEvent({
+								event: "open_tiktok",
+								button_id: "open_tiktok",
+								button_text: "open tiktok",
+							});
+						}}
 						className="transition-all duration-300 hover:text-white cursor-pointer transform hover:scale-110"
 					>
 						<SiTiktok className="h-5 w-5" />
