@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
 import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
@@ -52,7 +51,11 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<AspectRatio ratio={1} className="rounded-xl overflow-hidden shadow-lg">
+				<AspectRatio
+					suppressHydrationWarning
+					ratio={1}
+					className="rounded-xl overflow-hidden shadow-lg"
+				>
 					<Image
 						src="/images/makro_02.webp"
 						alt="Tuk-tuk advertisement example"
