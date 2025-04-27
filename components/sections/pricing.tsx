@@ -26,7 +26,7 @@ export default function Pricing() {
 	const [cars, setCars] = React.useState(1);
 
 	return (
-		<div className="py-12 px-4 bg-gray-50 min-h-screen">
+		<div className="py-12 px-4 bg-gray-50 min-h-[500px]">
 			<h1 className="text-3xl md:text-4xl font-bold text-center mb-6">
 				ราคาแพ็กเกจ TUK D ADS
 			</h1>

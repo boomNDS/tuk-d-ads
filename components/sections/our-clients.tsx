@@ -13,7 +13,7 @@ const clientLogos = [
 ];
 
 const OurClientSection = () => (
-	<div className="overflow-hidden py-12">
+	<div className="overflow-hidden py-12 bg-muted mt-10">
 		<h2 className="text-center text-2xl font-bold mb-6 text-gray-800">
 			ลูกค้าของเรา
 		</h2>

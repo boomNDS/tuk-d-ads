@@ -12,7 +12,7 @@ export default function WhatIsSection() {
 		"บริการติดป้ายโฆษณาบนรถสองแถวและหมวกวินมอเตอร์ไซค์",
 	];
 	return (
-		<section className="container mx-auto px-4 mt-[5rem] mb-5">
+		<section className="container mx-auto px-4 mt-[5rem] mb-10">
 			<div className="flex flex-col md:flex-row gap-6 items-center">
 				<YouTubeEmbed
 					videoid="D7sLTBz8Jtc"

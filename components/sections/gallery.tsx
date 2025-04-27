@@ -24,7 +24,7 @@ export default function GallerySection() {
 	const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
 
 	return (
-		<section className="w-full px-4 py-12">
+		<section className="w-full px-4 pb-12 pt-6">
 			<div className="mx-auto max-w-4xl text-center mb-6">
 				<h2 className="text-4xl md:text-5xl font-bold">ผลงานการติดตั้ง</h2>
 			</div>

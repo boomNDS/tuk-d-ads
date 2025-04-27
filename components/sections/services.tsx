@@ -21,7 +21,7 @@ const features = [
 
 const Services = () => {
 	return (
-		<div className="min-h-[350px] flex items-center justify-center py-10">
+		<div className="min-h-[350px] lg:h-[550px] flex items-center justify-center py-10 bg-muted">
 			<div>
 				<h2
 					className={cn(

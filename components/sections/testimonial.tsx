@@ -45,7 +45,7 @@ const testimonials = [
 ];
 
 const Testimonial = () => (
-	<div className="min-h-screen flex justify-center items-center py-12 px-6">
+	<div className="min-h-[650px] flex justify-center items-center py-6 px-6">
 		<div>
 			<h2 className="mb-14 text-5xl md:text-6xl font-bold text-center tracking-tight">
 				เสียงจากลูกค้าของเรา
