@@ -1,3 +1,4 @@
+"use client";
 import Logo from "@/components/logo";
 import { Separator } from "@/components/ui/separator";
 import { SOCIAL_LINKS } from "@/lib/constants";
