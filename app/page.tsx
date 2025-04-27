@@ -13,15 +13,15 @@ export default function Home() {
 	return (
 		<div className="w-screen max-w-none flex flex-col">
 			<Hero />
-			<OurClientsSection />
 			<WhatIsSection />
 			<ServicesSection />
-			<Workflows />
 			<SupportedAds />
+			<Workflows />
+			<OurClientsSection />
 			<Testimonial />
+			<GallerySection />
 			<Pricing />
 			<FAQSection />
-			<GallerySection />
 		</div>
 	);
 }

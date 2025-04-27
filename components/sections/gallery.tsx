@@ -14,7 +14,11 @@ import {
 } from "@/components/ui/carousel";
 
 export default function GallerySection() {
-	const isMd = useMediaQuery("(min-width: 768px)");
+	const isMd = useMediaQuery("(min-width: 768px)", {
+		defaultValue: true,
+		initializeWithValue: false,
+	});
+
 	const perSlide = isMd ? 10 : 6;
 	const { pages } = useGalleryData(perSlide);
 	const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
