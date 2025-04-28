@@ -1,8 +1,11 @@
+"use client";
+
 import { YouTubeEmbed } from "@next/third-parties/google";
 import { CustomMotionCount } from "@/components/custom-motion-count";
 import { cn } from "@/lib/utils";
 import { CircleCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useMediaQuery } from "usehooks-ts";
 
 export default function WhatIsSection() {
 	const benefits = [
@@ -11,12 +14,16 @@ export default function WhatIsSection() {
 		"โปรโมทผ่านอินฟลูเอนเซอร์โดยไม่มีค่าใช้จ่ายเพิ่มเติม",
 		"บริการติดป้ายโฆษณาบนรถสองแถวและหมวกวินมอเตอร์ไซค์",
 	];
+	const isLg = useMediaQuery("(min-width: 1024px)", {
+		defaultValue: true,
+		initializeWithValue: false,
+	});
 	return (
 		<section className="container mx-auto px-4 mt-[5rem] mb-10">
 			<div className="flex flex-col md:flex-row gap-6 items-center">
 				<YouTubeEmbed
 					videoid="D7sLTBz8Jtc"
-					width={600}
+					width={isLg ? 600 : 400}
 					params="autoplay=0&mute=0&loop=1&playlist=D7sLTBz8Jtc&controls=0&showinfo=0&rel=0"
 				/>
 
