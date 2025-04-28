@@ -100,13 +100,13 @@ export const metadata: Metadata = {
 		{
 			rel: "icon",
 			type: "image/png",
-			url: "/android-chrome-192x192.png",
+			url: "/web-app-manifest-192x192.png",
 			sizes: "192x192",
 		},
 		{
 			rel: "icon",
 			type: "image/png",
-			url: "/android-chrome-512x512.png",
+			url: "/web-app-manifest-512x512.png",
 			sizes: "512x512",
 		},
 	],
