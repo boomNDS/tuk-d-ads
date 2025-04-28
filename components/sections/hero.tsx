@@ -1,10 +1,13 @@
+"use client";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useState } from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Hero = () => {
+	const [loaded, setLoaded] = useState(false);
 	return (
 		<section
 			className={cn(
@@ -56,11 +59,15 @@ const Hero = () => {
 					ratio={1}
 					className="rounded-xl overflow-hidden shadow-lg"
 				>
+					{!loaded && (
+						<Skeleton className="absolute inset-0 w-full h-full animate-pulse" />
+					)}
 					<Image
 						src="/images/makro_02.webp"
 						alt="Tuk-tuk advertisement example"
 						fill
-						className="object-cover"
+						className={cn("object-cover", loaded ? "opacity-100" : "opacity-0")}
+						onLoadingComplete={() => setLoaded(true)}
 						priority
 					/>
 				</AspectRatio>
