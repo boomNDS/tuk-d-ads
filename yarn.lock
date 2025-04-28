@@ -1450,11 +1450,6 @@ pure-rand@^6.1.0:
   resolved "https://registry.yarnpkg.com/pure-rand/-/pure-rand-6.1.0.tgz#d173cf23258231976ccbdb05247c9787957604f2"
   integrity sha512-bVWawvoZoBYpp6yIoQtQXHZjmz35RSVHnUOTefl8Vcjr8snTPY1wnpSPMWekcFwbxI6gtmT7rSYPFvz71ldiOA==
 
-react-accordion@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/react-accordion/-/react-accordion-0.3.0.tgz#5ad00424197c92fe19baa7095febfe86faba00b6"
-  integrity sha512-g3F52dKXiysPQrculK0fWs3pCDCqolVVIRuVWOwmeJoXK+D7oD445Qok7oacFqyU13LAIg0X2cL97GUUVNKjcw==
-
 react-countup@^6.5.3:
   version "6.5.3"
   resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-6.5.3.tgz#e892aa3eab2d6ba9c3cdba30bf4ed6764826d848"
