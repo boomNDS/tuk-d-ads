@@ -2,9 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
 	trailingSlash: false,
-	experimental: {
-		nextScriptWorkers: true,
-	},
 	images: {
 		remotePatterns: [
 			{
