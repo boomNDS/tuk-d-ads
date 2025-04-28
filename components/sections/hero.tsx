@@ -27,7 +27,7 @@ const Hero = () => {
 			>
 				<div className="my-auto">
 					<h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-5xl font-bold !leading-[1.2] tracking-tight gradient-text">
-						โฆษณารถตุ๊กตุ๊ก
+						ติดป้ายโฆษณาหลังรถตุ๊กตุ๊ก
 						<br />
 						เข้าถึงผู้คนหลายพันคนทุกวัน
 					</h1>
