@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const steps = [
 	{
 		number: 1,
-		title: "ติดต่เรา",
+		title: "ติดต่อเรา",
 		description: "ปรึกษาเบื้องต้นและขอใบเสนอราคา",
 	},
 	{
